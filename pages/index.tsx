@@ -93,8 +93,9 @@ const Home: NextPage = () => {
 								360-degree Panorama Generation
 							</a>
 							<div className="text-sm text-[#4b5563]">
-								Simon Coessens, A. Malhotra. Structural Priors
-								for Vision Workshop, ICCV 2025.{" "}
+								Simon Coessens, A. Malhotra, N. Bennacer
+								Seghouani. Structural Priors for Vision
+								Workshop, ICCV 2025.{" "}
 								<a
 									href="https://openreview.net/forum?id=69OK8v8BSJ&noteId=69OK8v8BSJ"
 									target="_blank"
