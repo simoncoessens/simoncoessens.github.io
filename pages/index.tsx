@@ -34,7 +34,7 @@ const Home: NextPage = () => {
 					<h2 className="text-base font-semibold uppercase tracking-wide text-black mb-3">
 						Education
 					</h2>
-					<ul className="space-y-3">
+					<ul className="space-y-4">
 						<li>
 							<div>
 								<span className="text-black">
@@ -50,14 +50,45 @@ const Home: NextPage = () => {
 									Universitat Politècnica de Catalunya (UPC)
 								</li>
 							</ul>
+							<div className="mt-1 text-sm text-[#4b5563]">
+								Thesis:{" "}
+								<em>
+									360° Panorama Generation from Arbitrarily
+									Posed Input Images using Multi-View
+									Diffusion
+								</em>
+								. Supervisor: Akash Malhotra.
+							</div>
 						</li>
 						<li>
-							<span className="text-black">BSc Mathematics</span>,
-							KU Leuven, 2020–2025 — <em>cum laude</em>
+							<div>
+								<span className="text-black">
+									BSc Mathematics
+								</span>
+								, KU Leuven, 2020–2025 — <em>cum laude</em>
+							</div>
+							<div className="mt-1 text-sm text-[#4b5563]">
+								Taken alongside Informatics degree; averaged
+								~85 ECTS credits per year. Thesis:{" "}
+								<em>Forecasting Stationary Processes</em>.
+								Supervisor: Dr. Sergey Berezin.
+							</div>
 						</li>
 						<li>
-							<span className="text-black">BSc Informatics</span>,
-							KU Leuven, 2019–2023 — <em>cum laude</em>
+							<div>
+								<span className="text-black">
+									BSc Informatics
+								</span>
+								, KU Leuven, 2019–2023 — <em>cum laude</em>
+							</div>
+							<div className="mt-1 text-sm text-[#4b5563]">
+								Thesis:{" "}
+								<em>
+									Efficiency Analysis of Compressed Sensing
+									in a Boolean Setting
+								</em>
+								. Supervisor: Prof. Daan Huybrechs.
+							</div>
 						</li>
 					</ul>
 				</section>
@@ -94,8 +125,8 @@ const Home: NextPage = () => {
 							</a>
 							<div className="text-sm text-[#4b5563]">
 								Simon Coessens, A. Malhotra, N. Bennacer
-								Seghouani. Structural Priors for Vision
-								Workshop, ICCV 2025.{" "}
+								Seghouani. Structural Priors for Vision (SP4V)
+								Workshop, ICCV 2025 — <em>Spotlight</em>.{" "}
 								<a
 									href="https://openreview.net/forum?id=69OK8v8BSJ&noteId=69OK8v8BSJ"
 									target="_blank"
