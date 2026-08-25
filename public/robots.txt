@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://simoncoessens.github.io/sitemap.xml

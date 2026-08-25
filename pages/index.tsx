@@ -1,6 +1,48 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
+const personJsonLd = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	name: "Simon Coessens",
+	url: "https://simoncoessens.github.io/",
+	image: "https://avatars.githubusercontent.com/u/56151036?v=4",
+	email: "mailto:simon.coessens@proton.me",
+	jobTitle: "Computer vision researcher",
+	description:
+		"Computer vision and generative models, with a recent focus on diffusion-based image generation.",
+	alumniOf: [
+		{ "@type": "CollegeOrUniversity", name: "CentraleSupélec" },
+		{ "@type": "CollegeOrUniversity", name: "KU Leuven" },
+	],
+	sameAs: [
+		"https://scholar.google.com/citations?user=Va8TCs8AAAAJ",
+		"https://github.com/simoncoessens",
+		"https://www.linkedin.com/in/simon-coessens/",
+		"https://openreview.net/forum?id=69OK8v8BSJ",
+		"https://sp4v.github.io/",
+	],
+	subjectOf: [
+		{
+			"@type": "ScholarlyArticle",
+			name: "MultiViewPano: A Generalist Approach to 360-degree Panorama Generation",
+			author: [
+				{ "@type": "Person", name: "Simon Coessens" },
+				{ "@type": "Person", name: "Akash Malhotra" },
+				{ "@type": "Person", name: "Nacéra Bennacer Seghouani" },
+			],
+			url: "https://openreview.net/forum?id=69OK8v8BSJ",
+			isPartOf: {
+				"@type": "Event",
+				name: "Structural Priors for Vision (SP4V) Workshop, ICCV 2025",
+				url: "https://sp4v.github.io/",
+				startDate: "2025-10-19",
+				location: "Honolulu, Hawaii",
+			},
+		},
+	],
+};
+
 const Home: NextPage = () => {
 	return (
 		<>
@@ -8,7 +50,19 @@ const Home: NextPage = () => {
 				<title>Simon Coessens</title>
 				<meta
 					name="description"
-					content="Simon Coessens — computer vision and generative models."
+					content="Simon Coessens — computer vision and generative models. MSc CentraleSupélec (Erasmus Mundus BDMA). Spotlight talk at the SP4V workshop, ICCV 2025 (MultiViewPano)."
+				/>
+				<link rel="canonical" href="https://simoncoessens.github.io/" />
+				<meta property="og:type" content="profile" />
+				<meta property="og:title" content="Simon Coessens" />
+				<meta
+					property="og:description"
+					content="Computer vision and generative models. Spotlight talk at the SP4V workshop, ICCV 2025."
+				/>
+				<meta property="og:url" content="https://simoncoessens.github.io/" />
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
 				/>
 			</Head>
 			<main className="mx-auto max-w-2xl px-6 py-20 font-serif text-[#1f2937] leading-relaxed">
@@ -125,8 +179,17 @@ const Home: NextPage = () => {
 							</a>
 							<div className="text-sm text-[#4b5563]">
 								Simon Coessens, A. Malhotra, N. Bennacer
-								Seghouani. Structural Priors for Vision (SP4V)
-								Workshop, ICCV 2025 — <em>Spotlight</em>.{" "}
+								Seghouani.{" "}
+								<a
+									href="https://sp4v.github.io/"
+									target="_blank"
+									rel="noreferrer"
+									className="underline underline-offset-2"
+								>
+									Structural Priors for Vision (SP4V) Workshop,
+									ICCV 2025
+								</a>{" "}
+								— <em>Spotlight talk</em>, Honolulu, 19 Oct 2025.{" "}
 								<a
 									href="https://openreview.net/forum?id=69OK8v8BSJ&noteId=69OK8v8BSJ"
 									target="_blank"
