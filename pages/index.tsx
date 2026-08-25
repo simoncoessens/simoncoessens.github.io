@@ -52,6 +52,10 @@ const Home: NextPage = () => {
 					name="description"
 					content="Simon Coessens — computer vision and generative models. MSc CentraleSupélec (Erasmus Mundus BDMA). Spotlight talk at the SP4V workshop, ICCV 2025 (MultiViewPano)."
 				/>
+				<meta
+					name="google-site-verification"
+					content="k9fRT7fiiJqlqIXUaPXldCcpCxvBAoHuF1Oz7uvwUSk"
+				/>
 				<link rel="canonical" href="https://simoncoessens.github.io/" />
 				<meta property="og:type" content="profile" />
 				<meta property="og:title" content="Simon Coessens" />
